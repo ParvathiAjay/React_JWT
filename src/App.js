@@ -7,14 +7,14 @@ import Help from './components/Help';
 
 const App = () => {
   return (
-    <Router basename='/React_JWT'>
+    // <Router basename='/React_JWT'>
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/help" element={<Help />} />
       </Routes>
-    </Router>
+    // </Router>
   );
 };
 
