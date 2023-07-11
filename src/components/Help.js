@@ -4,7 +4,7 @@ import { Link, Routes, Route } from 'react-router-dom';
 const Help = () => {
   return (
     <div>
-      <h3> Help</h3>
+      <h2> Help</h2>
       <Link to="/">Go to Home</Link>
     </div>
   );
