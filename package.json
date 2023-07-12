@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "build:development": "copy  .env.development .env && react-scripts build",
     "build:production": "copy  .env.production .env && react-scripts build",
     "build:local": "copy  .env.local .env && react-scripts build",
@@ -23,9 +24,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "clean": "rd /s /q build",
-    "deploy:production": "npm run build:production && gh-pages -d build",
-    "deploy:development": "npm run build:development && gh-pages -d build",
-    "deploy:local": "npm run build:local && gh-pages -d build"
+    "deploy": "gh-pages"
   },
   "eslintConfig": {
     "extends": [
