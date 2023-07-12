@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <h2>Home</h2>
-      <Link to="/about">Go to About</Link>
+      <Link to="/about">Go to About</Link> <br/>
       {process.env.REACT_APP_API_URL}
     </div>
   );
