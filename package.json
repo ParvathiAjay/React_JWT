@@ -16,14 +16,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "build:development": "copy  .env.development .env && react-scripts build",
     "build:production": "copy  .env.production .env && react-scripts build",
     "build:local": "copy  .env.local .env && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy:production": "npm run build:production && gh-pages -d build",
+    "deploy:development": "npm run build:development && gh-pages -d build",
+    "deploy:local": "npm run build:testing && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
