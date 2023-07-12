@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "build:development": "copy  .env.development .env && react-scripts build",
     "build:production": "copy  .env.production .env && react-scripts build",
-    "build:alpha": "copy  .env.alpha .env && react-scripts build",
+    "build:stage": "copy  .env.alpha .env && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
