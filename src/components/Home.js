@@ -6,6 +6,7 @@ const Home = () => {
     <div>
       <h2>Home</h2>
       <Link to="/about">Go to About</Link>
+      {process.env.REACT_APP_API_URL}
     </div>
   );
 };
