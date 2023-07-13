@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
       <h2>Home</h2>
-      <Link to="/about">Go to About</Link> <br />
+      <Link to="/about">Go to About test</Link> <br />
       <p>{process.env.REACT_APP_API_URL}</p>
       {/* <p>{config[process.env.NODE_ENV].baseUrl}</p> */}
     </div>
