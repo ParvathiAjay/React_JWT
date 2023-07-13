@@ -23,9 +23,9 @@
     "build:stage": "env-cmd -f  .env.stage .env && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy:development": "cp .env.development .env && npm run build",
-    "predeploy:production": "cp .env.production .env && npm run build",
-    "predeploy:stage": "cp .env.staging .env && npm run build",
+    "predeploy:development": "copy .env.development .env && npm run build",
+    "predeploy:production": "copy .env.production .env && npm run build",
+    "predeploy:stage": "copy .env.staging .env && npm run build",
     "clean": "rd /s /q build",
     "deploy": "gh-pages -d build"
   },
