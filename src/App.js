@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Switch,HashRouter, Route } from 'react
 import Home from './components/Home';
 import About from './components/About';
 import Help from './components/Help';
+// dxgfdsgdsgdfdfhfhfdfgdgdfgsgsdgsdgsg
 const App = () => {
   return (
     // .en

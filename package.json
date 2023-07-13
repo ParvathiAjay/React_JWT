@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
@@ -17,14 +18,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:development": "copy  .env.development .env && react-scripts build",
-    "build:production": "copy  .env.production .env && react-scripts build",
-    "build:local": "copy  .env.local .env && react-scripts build",
+    "build:development": "env-cmd -f  .env.development .env && react-scripts build",
+    "build:production": "env-cmd -f  .env.production .env && react-scripts build",
+    "build:stage": "env-cmd -f  .env.stage .env && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "clean": "rd /s /q build",
-    "deploy": "gh-pages"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
